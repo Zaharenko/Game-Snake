@@ -1,0 +1,205 @@
+@font-face {
+    font-family: Vida33Pro; /* Гарнитура шрифта */
+    src: url(../fonts/Vida33Pro.ttf); /* Путь к файлу со шрифтом */
+   }
+
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Vida33Pro', sans-serif !important;
+  background: url(../video/photo.png);
+  background-size: cover;
+}
+
+input{
+  text-align: center;
+}
+
+.first{
+  min-height: 100vh;
+  width: 100%;
+
+}
+
+.line{
+  margin-top: 1%;
+}
+
+.bgvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -9999;
+  filter: sepia(20%);
+}
+
+.btn{
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.btn h1{
+  font-size: 5em;
+  height: 1em;
+}
+
+.form p{
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+#player{
+  position: relative;
+  top: 1%;
+  right: 1%;
+}
+
+.glyphicon{
+  font-size: 2em !important;
+  cursor: pointer;
+  color: #dadada;
+}
+
+.glyphicon:hover{
+  color:#fff;
+}
+
+.glyphicon:active{
+  color:red;
+}
+
+.ok{
+  font-size: 1em !important;
+  display: none;
+}
+
+.remove{
+  font-size: 1em !important;
+  display: none;
+}
+
+#login{
+  display: none;
+}
+
+.records{
+  position: absolute;
+  top: -40em;
+  height: initial;
+  max-height: 500px;
+  overflow-y: scroll;
+  width: 40vh;
+  display: none;
+  background-color: #fff;
+  opacity: 0.5;
+  display: none;
+  
+}
+
+.close{
+  font-size: 40px !important;
+}
+
+.nick-name{
+  display: block;
+  position: relative;
+  left: -15em;
+}
+
+.nick-name p{
+  display: inline-block;
+}
+
+.red{
+  color: red;
+  font-size: 25px;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 15px;
+  background: #000;
+  
+}
+::-webkit-scrollbar-thumb {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  border-width:1px 1px 1px 2px;
+  border-color: #777;
+  background-color: #aaa;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: blue;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #fff;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  height: 5px;
+}
+
+
+
+
+/* SECOND*/
+
+.second{
+  display: none;
+  background-color: #cecece;
+  min-height: 100vh;
+
+}
+
+.login{
+  text-transform: uppercase;
+  color: green;
+}
+
+.btn-info {
+    width: 90px !important;
+    color: #fff;
+    background-color: black !important;
+    border-color: white !important;
+}
+
+.btn-info:hover {
+    color: #000 !important;
+    background-color: #cecece !important;
+    border-color: black !important;
+}
+
+.bt-no{
+  width: 90px !important;
+  background-color: #fff !important;
+  border: 1px solid #000 !important;
+  color: #000 !important;
+}
+
+
+#tooltip {
+  z-index: 9999;
+  position: absolute;
+  display: none;
+  top:0px;
+  left:0px;
+  background-color: #000;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  opacity: 0.6;
+  border-radius: 5px; 
+}
+
+#setting p{
+  cursor: help;
+}
+
+
+
+
+
+

@@ -1,0 +1,215 @@
+            a { 
+                text-decoration: none !important; 
+                color:#444444 !important;
+            }
+            
+            
+            .wrap{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            header{
+                width: 340px;
+                font-size: 0;
+            }
+            canvas{
+                display: none;
+                border-style: solid;
+                border-width: 10px;
+                border-color: #FFFFFF;
+            }
+            canvas:focus{
+                outline: none;
+            }
+            
+            .score{
+                display: inline-block;
+                width: 290px;
+                font-size: 20px;
+                color: #333;
+            }
+            .score_value{
+                font-size: inherit;
+            }
+            
+            /* All screens style */
+            #gameover a, #setting a, #menu a{
+                display: block;
+            }
+       
+            #gameover a, #setting a:hover, #menu a:hover{
+                cursor: pointer;
+            }
+            
+            #gameover a:hover::before, #setting a:hover::before, #menu a:hover::before{
+                content: "\261e";
+                margin-right: 10px;
+            }
+            
+            /* Menu Screen Style */
+            #menu{
+                display: block;
+                width: 340px;
+                padding-top: 50px;
+                padding-bottom: 95px;
+                font-size: 40px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                color: #333;
+            }
+            
+            #menu h2{
+                -webkit-animation: logo-ani 1000ms linear infinite;
+                        animation: logo-ani 1000ms linear infinite;
+                margin-bottom: 30px;
+                
+            }
+            
+            #menu a{
+                font-size: 30px;
+            }
+            
+            @-webkit-keyframes logo-ani{
+               50%{-webkit-transform: scale(1.3,1.3);}
+              100%{-webkit-transform: scale(1.0,1.0);}
+            }
+
+            @keyframes logo-ani{
+               50%{transform: scale(1.3,1.3);}
+              100%{transform: scale(1.0,1.0);}
+            }
+            
+            
+            /* Game Over Screen Style */
+            
+            #gameover{
+                display: none;
+                width: 340px;
+                padding-top: 95px;
+                padding-bottom: 95px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                font-size: 30px;
+                color: #333;
+            }
+            
+            #gameover p{
+                margin-top: 25px;
+                font-size: 20px;
+            }
+            
+            /* Settings Screen Style */
+            #setting{
+                display: none;
+                width: 450px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                font-size: 30px;
+                color: #333;
+                text-align: center;
+            }
+            
+            #setting h2{
+                margin-bottom: 15px;
+            }
+            
+            #setting p{
+                margin-top: 10px;
+            }
+            
+            #setting input{
+                display:none;
+            }
+            
+            #setting label{
+                cursor: pointer;
+            }
+            
+            #setting input:checked + label{
+                background-color: #FFF;
+                color: #000;
+            }
+
+            .snake-wrap{
+                display: none;
+            }
+
+
+            .clode{
+                min-height: 100px;
+                width: 300px;
+                -webkit-animation: swinging 35s ease-in-out 0s infinite;
+                -moz-animation: swinging 35s ease-in-out 0s infinite;
+                animation: swinging 35s ease-in-out 0s infinite !important;
+                -webkit-transform-origin: 50% 0%;
+                -moz-transform-origin: 50% 0;
+                transform-origin: 50% 0;
+                }
+                 
+                @keyframes swinging{
+                0% { transform: rotate(0); }
+                5% { transform: rotate(12deg); }
+                10% { transform: rotate(-10deg); }
+                15% { transform: rotate(9deg); }
+                20% { transform: rotate(-8deg); }
+                25% { transform: rotate(7deg); }
+                30% { transform: rotate(-6deg); }
+                35% { transform: rotate(5deg); }
+                40% { transform: rotate(-4deg); }
+                45% { transform: rotate(3deg); }
+                50% { transform: rotate(0); }
+                100% { transform: rotate(0); }
+                }
+                 
+                @-webkit-keyframes swinging{
+                0% { -webkit-transform: rotate(0); }
+                5% { -webkit-transform: rotate(12deg); }
+                10% { -webkit-transform: rotate(-10deg); }
+                15% { -webkit-transform: rotate(9deg); }
+                20% { -webkit-transform: rotate(-8deg); }
+                25% { -webkit-transform: rotate(7deg); }
+                30% { -webkit-transform: rotate(-6deg); }
+                35% { -webkit-transform: rotate(5deg); }
+                40% { -webkit-transform: rotate(-4deg); }
+                45% { -webkit-transform: rotate(3deg); }
+                50% { -webkit-transform: rotate(0); }
+                100% { -webkit-transform: rotate(0); }
+                }
+                 
+                @-moz-keyframes swinging{
+                0% { -moz-transform: rotate(0); }
+                5% { -moz-transform: rotate(12deg); }
+                10% { -moz-transform: rotate(-10deg); }
+                15% { -moz-transform: rotate(9deg); }
+                20% { -moz-transform: rotate(-8deg); }
+                25% { -moz-transform: rotate(7deg); }
+                30% { -moz-transform: rotate(-6deg); }
+                35% { -moz-transform: rotate(5deg); }
+                40% { -moz-transform: rotate(-4deg); }
+                45% { -moz-transform: rotate(3deg); }
+                50% { -moz-transform: rotate(0); }
+                100% { -moz-transform: rotate(0); }
+                }
+
+                #shake{
+                    width:320px;
+                    height:320px;
+                }
+                #small1{
+                  width:320px !important;
+                  height:320px !important;
+                }
+
+                #medium1{
+                  width:420px !important;
+                  height:420px !important;
+                }
+
+                #large1{
+                  width:520px !important;
+                  height:520px !important; 
+                }
